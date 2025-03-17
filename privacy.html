@@ -1,278 +1,779 @@
 
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>隐私政策</title>
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+
+  <style>
+    body,
+    p,
+    img,
+    dl,
+    dd,
+    ul,
+    ol,
+    li,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    form,
+    blockquote,
+    caption,
+    fieldset,
+    hr,
+    pre,
+    td,
+    th {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font: normal 12px/24px 'Microsoft Yahei', arial, sans-serif;
+      color: #333;
+    }
+
+    ul,
+    ol {
+      list-style: none;
+    }
+
+    img {
+      border: 0 none;
+    }
+
+    input,
+    select {
+      vertical-align: middle;
+      border: none
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    s,
+    em,
+    i {
+      font-style: normal;
+      text-decoration: none;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #000;
+      text-decoration: underline;
+    }
+
+    .clearfix:before,
+    .clearfix:after {
+      content: '\20';
+      display: block;
+      height: 0;
+      clear: both;
+      overflow: hidden;
+    }
+
+    .clearfix {
+      *zoom: 1;
+    }
+
+    .thide {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .clear {
+      clear: both;
+      height: 0;
+      overflow: hidden
+    }
+
+    /*frame*/
+    body {}
+
+    /* mob */
+    .wrap {
+      position: relative;
+      margin: 0 auto;
+      background-color: transparent;
+      overflow: hidden;
+    }
+
+    /* pc */
+
+    .pc .wrap {
+      position: relative;
+      max-width: 1920px;
+      min-width: 1000px;
+      margin: 0 auto;
+      background-color: transparent;
+    }
+
+
+
+    .container {
+      position: relative;
+      width: 1000px;
+      min-width: 1000px;
+      margin: 0 auto;
+    }
+
+    /*nav*/
+    .nav {
+      position: relative;
+      height: 72px;
+      background-color: #f3f3f3;
+      z-index: 9;
+    }
+
+    .nav-icon {
+      position: absolute;
+      top: 6px;
+      left: 0;
+      width: 92px;
+      height: 92px;
+      background-color: #333;
+      border-radius: 20px;
+      border: #fff solid 4px;
+      overflow: hidden;
+    }
+
+    .nav-icon img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .nav-gamename {
+      position: absolute;
+      top: 29px;
+      left: 130px;
+      font-size: 24px;
+    }
+
+    .nav-menu {
+      position: absolute;
+      top: 29px;
+      right: 0;
+      font-size: 16px;
+    }
+
+    .nav-menu li {
+      float: left;
+    }
+
+    .nav-menu li a {
+      display: block;
+      width: 120px;
+      height: 38px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .nav-menu li a:hover {
+      border-bottom: 3px solid #4abbfc;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .nav-menu li.separate {
+      color: #000000;
+      margin: 5px 10px;
+      width: 1px;
+      height: 14px;
+    }
+
+    .nav-fixed {
+      position: fixed;
+    }
+
+
+
+    /*privacy*/
+    .commontext {
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    /* pc */
+    .pc .commontext {
+      position: relative;
+      width: 1000px;
+      margin: 0 auto;
+    }
+
+    .commontext-title {
+      padding-top: 5px;
+      line-height: 34px;
+      font-size: 18px;
+    }
+
+    .commontext-con {
+      color: #000000;
+      line-height: 160%;
+      font-size: 12px;
+      padding: 0 10px 10px 10px;
+      margin: 0px 15px 10px 15px;
+      box-sizing: border-box;
+    }
+
+    /* pc */
+    .pc .commontext-con {
+      color: rgb(0, 0, 0);
+      line-height: 30px;
+      font-size: 14px;
+    }
+
+    .commontext-con strong {
+      font-weight: bold;
+    }
+    td p {
+      text-indent: 4px !important;
+      text-align: center;
+    }
+    /* mob */
+    .commontext-con p {
+      text-indent: 28px;
+
+    }
+
+    /* pc */
+    .pc .commontext-con p {
+      text-indent: 28px;
+
+    }
+
+    /*footer*/
+    .footer {
+      position: relative;
+      background-color: #353535;
+      height: 250px;
+    }
+
+    .footer-arrow {
+      height: 14px;
+      padding-bottom: 41px;
+    }
+
+    .footer-arrow div {
+      border: #dcdcdc solid 14px;
+      border-bottom: none;
+      box-sizing: border-box;
+    }
+
+    .footer-arrow .a1 {
+      width: 70%;
+      position: absolute;
+      left: 0;
+      border-right-color: transparent !important;
+    }
+
+    .footer-arrow .a2 {
+      width: 30%;
+      position: absolute;
+      right: 0;
+      border-left-color: transparent !important;
+    }
+
+    .footer-contact {
+      position: absolute;
+      left: 0;
+      top: 0;
+      line-height: 36px;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    .footer-contact-title {
+      font-size: 18px;
+    }
+
+    .footer-qrcode {
+      position: absolute;
+      right: 41px;
+      width: 110px;
+      height: 110px;
+      background: #fff;
+      padding: 10px;
+    }
+
+    .footer-qrocde .qrcode {
+      width: 110px;
+      height: 110px;
+    }
+  </style>
+  <title>Privacy Policy</title>
+
 </head>
+
 <body>
-    <div style="word-break:break-all;font-size:8.0pt">
-        <p><span><span><strong><span><span><span style="color:black">《盛趣游戏隐私政策》</span></span></span></strong></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">前言</span></span></span></strong></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">盛趣游戏（数龙信息技术（浙江）有限公司及各关联公司合称盛趣游戏）非常重视用户的隐私保护，因此制定了涵盖如何收集、使用、披露、分享以及存储用户的信息的政策。用户在使用我们的服务时，我们可能会收集和使用您的相关信息。我们希望通过本政策向您说明，在使用我们的服务时，我们如何收集、使用、储存和分享这些信息，以及我们为您提供的访问、更新、控制和保护这些信息的方式。</span></span></span></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">【重要提示】：</span></span></span></strong></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">本政策适用于用户与盛趣游戏的交互行为以及用户注册和使用盛趣游戏的服务。除了在本政策和服务条款以及其他公布的准则的规定的情况下，我们不会公布与用户个人身份有关的资料。请注意盛趣游戏不时地会检查其隐私措施，因此有关的措施会随之变化。我们恳请您定期光顾本页以确保对我们隐私政策最新版本始终保持了解。在阅读完本政策之后，如您对本政策或与政策相关的事宜有任何问题，请与我们联系。</span></span></span></strong></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">您使用或继续使用我们的服务，都表示您同意我们按照本政策收集、使用、储存和分享您的信息。</span></span></span></strong></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">1. </span></span></span></strong><strong><span><span><span style="color:black">盛趣游戏收集的信息</span></span></span></strong></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">我们提供服务时，可能会收集、储存和使用下列与您有关的信息。如果您不提供相关信息，可能无法注册成为我们的用户或无法享受我们提供的某些服务，或者无法达到相关服务拟达到的效果。</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">1.1 </span></span></span><span><span><span style="color:black">个人信息，您在注册账户或使用我们的服务时，向我们提供的相关个人信息，例如电话号码、实名信息等。其中实名信息为满足相关法律法规政策及相关主管部门的要求，用户需进行实名认证以继续使用和享受游戏内容。我们会在获得您同意或您主动提供的情况下收集您的实名身份信息，该信息属于敏感信息，拒绝提供实名身份信息可能会导致您无法游戏或在游戏过程中受到相应限制；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">1.2</span></span></span><span><span><span style="color:black">第三方信息，如果您使用微信、QQ、微博授权登录游戏，我们会收集您微信、QQ、微博的唯一标识，用于保存您的登录信息，以便您在不同设备登录；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">1.3</span></span></span><strong><span><span><span style="color:black">设备或软件信息</span></span></span></strong><span><span><span style="color:black">，为保障您正常使用我们的服务，维护游戏基础功能的正常运行，优化游戏产品性能，提升您的游戏体验并保障您的账号安全，我们会收集您的设备ID、设备名称、设备类型和版本、系统版本、IP地址、MAC地址、应用ID、网络类型等信息。</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">1.4 </span></span></span><span><span><span style="color:black">游戏内行为信息，当您使用游戏服务时，我们会收集您的游戏日志信息，例如登录日志、物品日志、游戏角色信息、充值信息、消费信息、游戏对局信息等，以便您能够在客户端查看您的游戏历史记录，同时用于游戏运营统计分析、客服投诉处理及其他游戏安全分析，并为提升您的游戏体验，并尽最大程度保护您的虚拟物品安全。我们可能把前述信息同步至该游戏后续版本或您正在使用的我们提供的其他产品中。</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">1.5 </span></span></span><span><span><span style="color:black">游戏内互动信息，当您在游戏中通过文字、语音及其他方式与其他玩家进行互动，当您希望通过语音与其他游戏玩家互动，在您授权同意后，游戏申请会访问您的麦克风，为您提供语音聊天等功能。我们可能会收集并保存您发送的上述信息内容用于过滤色情、暴力、政治、辱骂、恶意广告等不当内容，以此净化游戏环境，维护健康的上网环境。</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">1.6 </span></span></span><span><span><span style="color:black">分享信息，当您使用游戏内分享功能与微信、qq、微博好友互动分享视频、文字和图片等信息。</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">1.7 </span></span></span><span><span><span style="color:black">游戏软件进程信息，在游戏进行时我们将收集您的硬件及操作系统信息、进程及游戏崩溃记录等信息，根据您使用游戏产品的频率和情况、故障信息、性能信息等分析我们产品的运行情况，以确保服务的安全性，并优化我们的产品，提高我们的服务质量。我们不会将我们存储在分析软件中的信息与您提供的个人身份信息相结合，同时打击破坏游戏公平环境或干扰、破坏游戏服务正常进行的行为（如用于检测盗版、扫描外挂、防止作弊等）。</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">注：</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">根据相关法律法规及国家标准，以下情形中，我们可能会收集、使用您的相关个人信息无需征求您的授权同意：</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">1</span></span></span><span><span><span style="color:black">） 与国家安全、国防安全等国家利益直接相关的；与公共安全、公共卫生、公共知情等重大公共利益直接相关的；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">2</span></span></span><span><span><span style="color:black">） 与犯罪侦查、起诉、审判和判决执行等直接相关的；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">3</span></span></span><span><span><span style="color:black">） 出于维护您或其他个人的生命、财产、声誉等重大合法权益但又很难得到本人同意的；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">4</span></span></span><span><span><span style="color:black">） 所收集的个人信息是您自行向社会公众公开的；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">5</span></span></span><span><span><span style="color:black">） 从合法公开披露的信息中收集个人信息的，如合法的新闻报道、政府信息公开等渠道；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">6</span></span></span><span><span><span style="color:black">） 根据您要求签订和履行合同所必需的；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">7</span></span></span><span><span><span style="color:black">） 用于维护所提供的产品或服务的安全稳定运行所必需的，例如发现、处置产品或服务的故障；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">8</span></span></span><span><span><span style="color:black">） 为开展合法的新闻报道所必需的；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">9</span></span></span><span><span><span style="color:black">） 出于公共利益开展统计或学术研究所必要，且其对外提供学术研究或描述的结果时，对结果中所包含的个人信息进行去标识化处理的；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">10</span></span></span><span><span><span style="color:black">） 法律法规规定的其他情形。</span></span></span></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">2.</span></span></span></strong><strong><span><span><span style="color:black">我们如何使用您的信息</span></span></span></strong></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">我们可能将在向您提供服务的过程之中所收集的信息用作下列用途：</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">&bull; 向您提供服务，包括基础游戏功能、玩家互动功能、分享功能、消费功能等；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">&bull; 在我们提供服务时，用于身份验证、客户服务、安全防范、诈骗监测、存档和备份用途，确保我们向您提供的产品和服务的安全性；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">&bull; 帮助我们设计新服务，改善我们现有服务；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">&bull; 使我们更加了解您如何接入和使用我们的服务，从而针对性地回应您的个性化需求，例如语言设定、位置设定、个性化的帮助服务和指示，或对您和其他使用我们服务的用户做出其他方面的回应；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">&bull; 软件认证或管理软件升级；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">&bull; 让您参与有关我们产品和服务的调查。</span></span></span></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">为了让我们的用户有更好的体验、改善我们的服务或您同意的其他用途，在符合相关法律法规的前提下，我们可能将通过我们的某一项服务所收集的个人信息，以汇集信息或者个性化的方式，用于我们的其他服务。针对某些特定服务的特定个人信息保护声明将更具体地说明我们在该等服务中如何使用您的信息。</span></span></span></strong></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">3.</span></span></span></strong><strong><span><span><span style="color:black">如何访问和控制您的信息</span></span></span></strong></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">我们将尽量采取适当的技术手段，保证您可以访问、更新和更正您的注册信息或使用我们的服务时提供的其他个人信息。在访问、更新、更正和删除您的个人信息时，我们可能会要求您进行身份验证，以保障您的账户安全。</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">如您想查询、修改、删除或撤回您的个人信息，你可以访问http://login.sdo.com/sdo/Login/LoginSDO.php登录您的账户。</span></span></span></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">4.</span></span></span></strong><strong><span><span><span style="color:black">我们如何分享您的信息</span></span></span></strong></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">除以下情形外，未经您同意，我们不会与任何第三方分享您的个人信息：</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">&bull; 我们可能将您的个人信息与我们的合作伙伴及第三方服务供应商、承包商及代理（例如通讯服务提供商以及为我们提供位置数据的地图服务供应商）分享（他们可能并非位于您所在法域），用作下列用途：</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">　&bull; 向您提供我们的服务；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">　&bull; 实现&ldquo;我们如何使用您的信息&rdquo;部分所述目的；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">　&bull; 履行我们在本政策或盛趣游戏与您达成的其他协议中的义务和行使我们的权利；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">　&bull; 理解、维护和改善我们的服务。</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">如我们与任何上述第三方分享您的个人信息，我们将努力确保该等第三方在使用您的个人信息时遵守本政策及我们要求其遵守的其他适当的保密和安全措施。</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">&bull; 随着我们业务的持续发展，我们有可能进行合并、收购、资产转让或类似的交易，而您的个人信息有可能作为此类交易的一部分而被转移。</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">&bull; 我们还可能为以下原因需要保留、保存或披露您的个人信息：</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">　&bull; 您授权或同意盛趣游戏披露的；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">　&bull; 遵守适用的法律法规；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">　&bull; 遵守法院命令或其他法律程序的规定；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">　&bull; 遵守相关政府机关的要求；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">　&bull; 我们认为为遵守适用的法律法规、维护社会公共利益、或保护我们或我们的关联公司、我们的客户、其他用户或雇员的人身和财产安全或合法权益或公共安全及利益所合理必需的；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">　 &bull; 根据盛趣游戏各服务条款及声明中的相关规定，或者盛趣游戏认为必要的其他情形下。</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">另外，根据相关法律法规及国家标准，以下情形中，我们可能会共享、转让、公开披露个人信息无需事先征得您的授权同意：</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">1</span></span></span><span><span><span style="color:black">） 与国家安全、国防安全直接相关的；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">2</span></span></span><span><span><span style="color:black">） 与公共安全、公共卫生、重大公共利益直接相关的；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">3</span></span></span><span><span><span style="color:black">） 与犯罪侦查、起诉、审判和判决执行等直接相关的；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">4</span></span></span><span><span><span style="color:black">） 出于维护个人信息主体或其他个人的生命、财产等重大合法权益但又很难得到本人同意的；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">5</span></span></span><span><span><span style="color:black">） 个人信息主体自行向社会公众公开个人信息的；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">6</span></span></span><span><span><span style="color:black">） 从合法公开披露的信息中收集个人信息的，如合法的新闻报道、政府信息公开等渠道。</span></span></span></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">5.</span></span></span></strong><strong><span><span><span style="color:black">我们如何保留、储存和保护您的信息</span></span></span></strong></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">我们仅在本政策所述目的所必需期间和法律法规要求的时限内保留您的个人信息，我们会按照法律法规规定，将境内收集的用户个人信息存储于中国境内。当我们的产品或服务发生停止运营的情况时，我们将根据相关法律法规规定进行公告通知，并依法保障您的合法权益。</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">我们使用各种安全技术和程序，以防信息的丢失、不当使用、未经授权阅览或披露。例如，在某些服务中，我们将利用防火墙、加密（例如SSL）、去标识化或匿名化处理、访问控制措施等技术来保护您向我们提供的个人信息。但请您谅解，由于技术的限制以及风险防范的局限，即便我们已经尽量加强安全措施，也无法始终保证信息百分之百的安全。您需要了解，您接入我们的服务所用的系统和通讯网络，有可能因我们可控范围外的情况而发生问题。</span></span></span></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">6.</span></span></span></strong><strong><span><span><span style="color:black">有关信息更新与公开的特别提示</span></span></span></strong></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">盛趣游戏鼓励用户更新和修改其个人信息以使其有效。盛趣游戏用户能在任何时候非常容易地获取并修改其个人信息。用户可以自行决定修改、删除他们的相关资料。</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">请记住，无论何时您自愿披露个人信息（如在留言板、通过电子邮件或在聊天区公布）， 此种信息可能被他人收集及使用，因此造成您的个人信息泄露，盛趣游戏不承担责任，如果您将个人信息公布在上述渠道，您就有可能造成个人信息泄露。因此，我们提醒并请您慎重考虑是否有必要在上述渠道公开您的个人信息。</span></span></span></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">7.</span></span></span></strong><strong><span><span><span style="color:black">有关敏感个人信息的提示</span></span></span></strong></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">某些个人信息因其特殊性可能被认为是敏感个人信息，例如您的收入、存款、有价证券、商业保险、不动产的信息和纳税数额信息。请注意，您在我们的服务中所提供、上传或发布的内容和信息，可能会泄露您的敏感个人信息。您需要谨慎地考虑，是否使用我们的服务披露您的敏感个人信息。您同意您的敏感个人信息按本政策所述的目的和方式来处理。</span></span></span></strong></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">我们在此申明不采集和保存您的以下信息：宗教信仰、基因、指纹、血型、疾病和病史信息等。</span></span></span></strong></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">8.</span></span></span></strong><strong><span><span><span style="color:black">我们服务中的第三方服务</span></span></span></strong></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">我们的服务可能包括或链接至第三方提供的社交媒体或其他服务（包括网站）。例如：</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">&bull; 您可利用 &ldquo;分享&rdquo;键将某些内容分享到我们的服务，或您可利用第三方连线服务登录我们的服务。这些功能可能会收集您的信息（包括您的日志信息），从而正常运行上述功能；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">&bull; 我们通过广告或我们服务的其他方式向您提供链接，使您可以接入第三方的服务或网站。</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">该等第三方社交媒体或其他服务由相关的第三方负责运营。您使用该等第三方的社交媒体服务或其他服务（包括您向该等第三方提供的任何个人信息），须受第三方自己的服务条款及个人信息保护声明（而非本政策）约束，您需要仔细阅读其条款。<strong>本政策仅适用于我们所收集的任何信息，并不适用于任何第三方提供的服务或第三方的信息使用规则，而我们对任何第三方使用由您提供的信息不承担任何责任。</strong></span></span></span></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">9.</span></span></span></strong><strong><span><span><span style="color:black">年龄限制</span></span></span></strong></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">盛趣游戏建议：任何未成年人参加网上活动应事先取得家长或其法定监护人（以下简称&quot;监护人&quot;）的同意。盛趣游戏将根据国家相关法律法规的规定保护未成年人的相关信息。</span></span></span></strong></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">我们鼓励父母或监护人指导未满十八岁的未成年人使用我们的服务。我们建议未成年人鼓励他们的父母或监护人阅读本政策，并建议未成年人在提交个人信息之前寻求父母或监护人的同意和指导。</span></span></span></strong></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">我们高度重视未成年人个人信息的保护问题，并持续探索更新的未成年人个人信息保护方式。</span></span></span></strong></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">我们会积极按照国家防沉迷政策要求，通过启用防沉迷系统保护未成年人的合法权益。我们会通过实名身份等信息校验判断相关账号的实名信息是否为未成年人，进而决定是否将此账号纳入到防沉迷体系中。另外，我们会收集您的登录时间、游戏时长等信息，通过从系统层面自动干预和限制未成年人游戏时间、启用强制下线功能等方式，引导未成年人合理游戏，并在限制未成年人充值金额到合理范围，帮助未成年人健康上网。详见《国家新闻出版署关于防止未成年人沉迷网络游戏的通知》。</span></span></span></strong></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">10.</span></span></span></strong><strong><span><span><span style="color:black">本政策的适用范围 ：</span></span></span></strong></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">除某些特定服务外，我们所有的服务均适用本政策。这些特定服务将适用特定的个人信息保护声明。该特定服务的个人信息保护声明构成本政策的一部分。<strong>如任何特定服务的个人信息保护声明与本政策有不一致之处，则适用特定服务的个人信息保护声明。</strong></span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">除本政策另有规定外，本政策所用词语将与盛趣游戏制定的其他公开条款所定义的词语具有相同的涵义。</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">请您注意，本政策不适用于以下情况：</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">&bull; 通过我们的服务而接入的第三方服务（包括任何第三方网站）收集的信息；</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">&bull; 通过在我们服务中进行广告服务的其他公司和机构所收集的信息。</span></span></span></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">11.</span></span></span></strong><strong><span><span><span style="color:black">本政策的修改</span></span></span></strong></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">本政策</span></span></span></strong><span><span><span style="color:black">发生变更时，我们会在版本更新时以适当的方式向您提示变更后的指引。请您仔细阅读变更后的隐私保护指引或指引内容，您继续使用游戏内容表示您同意我们按照更新后的隐私保护指引收集、处理或使用您的个人信息。<strong>如修改造成您在本政策下权利的实质减少，您可以选择停止使用我们向您提供的服务。</strong>任何修改都会将您的满意度置于首位。我们鼓励您在每次访问盛趣游戏的网页时都查阅我们的隐私政策。</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">最后，您是唯一对您的账号和密码信息负有保密责任的人。任何情况下，请小心妥善保管。</span></span></span></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">12.</span></span></span></strong><strong><span><span><span style="color:black">联系我们</span></span></span></strong></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">有关本声明或盛趣游戏隐私措施的问题请发送邮件至anquankefu@shengqugames.com或致电95105222与游戏协调人联系。我们将尽快审核所涉问题，并在验证身份后及时处理，最长在不超过十五天或法律法规规定期限内予以回复。</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">盛趣游戏</span></span></span></span></span></p>
-
-        <div style="page-break-after:always"><span style="display:none">&nbsp;</span></div>
-
-        <p style="text-align:left">&nbsp;</p>
-
-        <p><span><span><strong><span><span><span style="color:black">《盛趣游戏儿童隐私保护指引》</span></span></span></strong></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">除《盛趣游戏隐私政策》、《盛趣游戏通行证用户服务协议》外，我们还将通过《盛趣游戏儿童隐私保护指引》（&ldquo;本政策&rdquo;） 帮助您和孩子（本政策中的&ldquo;孩子&rdquo;，是指不满十四周岁的未成年人）进一步了解我们收集、使用、存储和共享您孩子个人信息的情况，以及您和您的孩子所享有的相关权利。</span></span></span></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">【重要提示】：</span></span></span></strong></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">本政策适用于不满十四周岁的未成年人的个人信息处理。有关您和已满十四周岁的用户的个人信息处理，请查看《盛趣游戏隐私政策》了解相关信息。</span></span></span></strong></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">我们会通过页面提示、交互流程、网站公告等方式向您说明儿童个人信息收集等情况，并征得您的同意。请您仔细阅读、充分理解《盛趣游戏隐私政策》和本政策后，选择是否同意前述隐私政策。</span></span></span></strong></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">1.</span></span></span></strong><strong><span><span><span style="color:black">我们收集的儿童个人信息</span></span></span></strong></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">在您的孩子使用盛趣游戏服务的过程中，盛趣游戏仅会收集您同意我们收集的或您及您的孩子主动提供的有关您孩子的个人信息，以向您的孩子提供、优化我们的服务以及保障您孩子的账户安全。我们可能会收集的您孩子的个人信息的详情，请参见《盛趣游戏隐私保护指引》。</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">同时，为验证您与您孩子的监护关系，我们可能还会收集您的联系方式<strong>（包括手机号码、电子邮箱）</strong>以及其他有助于我们判断监护关系的信息。</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">目前，除了向第三方调研机构收集游戏调研信息，以帮助我们改进游戏产品以及提供个性化服务之外，我们不会主动从盛趣游戏外的第三方获取您孩子的个人信息。如未来为业务发展需要从盛趣游戏外的第三方间接获取您孩子的个人信息，我们会在获取前向您明示个人信息的来源、类型及使用范围，如盛趣游戏开展业务需进行的个人信息处理活动超出您原本向盛趣游戏外的第三方提供个人信息时的授权同意范围，我们将在处理您孩子的该等个人信息前，征得您的明示同意；此外，我们也将会严格遵守相关法律法规的规定，并要求该第三方保障其提供的信息的合法性。</span></span></span></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">2.</span></span></span></strong><strong><span><span><span style="color:black">我们如何使用儿童个人信息</span></span></span></strong></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">我们严格遵守法律法规的规定以及与用户的约定，按照本政策及《盛趣游戏通行证用户服务协议》、《盛趣游戏隐私政策》所述使用收集的信息，以向您的孩子提供更为优质的服务。</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">若我们使用您孩子的个人信息，超出了与收集时所声称的目的及具有直接或合理关联的范围，我们将在使用您孩子的个人信息前，再次向您告知并征得您的同意。</span></span></span></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">3.</span></span></span></strong><strong><span><span><span style="color:black">儿童个人信息的存储</span></span></span></strong></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">3.1 </span></span></span><span><span><span style="color:black">我们按照法律法规规定，将在中华人民共和国境内收集到的您孩子的个人信息存储于中华人民共和国境内，并依法对这些信息进行严格保密。<strong>如涉及跨境业务，我们需要向境外机构传输境内收集的相关个人信息的，我们也会根据国内法律、行政法规和相关监管部门的规定，为您孩子的个人信息提供保护。</strong></span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">3.2 </span></span></span><span><span><span style="color:black">一般情况下，我们只会在为实现服务目的所必需的时间内或法律法规规定的条件下存储您孩子的个人信息。超出法律法规或监管规定的期限后，我们会按照法律法规的要求对您孩子的个人信息进行删除或者匿名化处理。</span></span></span></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">4.</span></span></span></strong><strong><span><span><span style="color:black">儿童个人信息的安全</span></span></span></strong></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">4.1 </span></span></span><span><span><span style="color:black">为了保障您孩子的信息安全，我们会在现有技术水平下采取合理必要的措施来保护孩子的信息，采取物理防护、安全技术、管理制度等措施来降低丢失、误用、非授权访问、披露和更改的风险，包括但不限于数据加密传输、防火墙和加密存储、物理访问控制以及信息访问授权控制。为此我们设置了安全程序保护您孩子的信息不会被未经授权的访问所窃取，所有的个人信息被加密储存并放置于经防火墙严格保护的内部系统。</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">4.2 </span></span></span><span><span><span style="color:black">为了保障您孩子的信息安全，我们建立了专门的管理制度、流程和组织以保障信息的安全。例如，我们严格限制访问信息的人员范围，要求他们遵守保密义务，并进行审计。</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">4.3 </span></span></span><span><span><span style="color:black">若发生儿童个人信息泄露等安全事件，我们会启动应急预案，阻止安全事件扩大，并及时以公告、推送通知或邮件等形式告知您和孩子安全事件的基本情况、我们即将或已经采取的处置措施和补救措施，以及我们对您的应对建议。如果难以实现逐一告知，我们将通过公告等方式发布警示。</span></span></span></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">5.</span></span></span></strong><strong><span><span><span style="color:black">儿童个人信息的更正</span></span></span></strong></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">如您和孩子发现儿童个人信息<strong>有错误的</strong>，可以联系我们处理。</span></span></span></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">6.</span></span></span></strong><strong><span><span><span style="color:black">儿童个人信息的删除</span></span></span></strong></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">6.1 </span></span></span><span><span><span style="color:black">如您和孩子发现我们违反法律、行政法规的规定或者双方的约定处理儿童个人信息的，或是超出目的范围或者必要期限处理儿童个人信息的，可以通过联系我们对相关个人信息进行删除。</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">6.2 </span></span></span><span><span><span style="color:black">如您撤回同意的，可以联系我们，我们将按照国家有关法律规定进行处理。</span></span></span></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">6.3 </span></span></span><span><span><span style="color:black">如您和孩子主动注销盛趣游戏账号并终止使用盛趣游戏，我们将会停止使用儿童的个人信息，但法律法规或监管部门另有规定的除外。如我们的产品或者服务停止运营，我们将根据相关法律法规规定进行通知，同时也将及时停止使用儿童个人信息，并将对保存的儿童个人信息进行删除或匿名化处理。</span></span></span></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">7.</span></span></span></strong><strong><span><span><span style="color:black">儿童个人信息的转移和委托处理</span></span></span></strong></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">我们不会向第三方转移和委托第三方处理儿童个人信息，</span></span></span></strong><span><span><span style="color:black">确需第三方转移或委托第三方处理的，我们都会根据法律、行政法规的规定进行合规措施，包括但不限于对第三方进行安全评估。</span></span></span></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">8.</span></span></span></strong><strong><span><span><span style="color:black">儿童个人信息的披露</span></span></span></strong></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">除非法律、行政法规规定应当披露或者根据与您的约定可以披露您孩子的个人信息的，<strong>我们不会披露孩子的个人信息。</strong></span></span></span></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">9.</span></span></span></strong><strong><span><span><span style="color:black">变更</span></span></span></strong></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">我们可能会适时对本政策进行修订。当本政策的条款发生变更时，我们会在版本更新时以适当的方式向您提示变更后的指引。请您仔细阅读变更后的隐私保护指引或指引内容，您的孩子继续使用盛趣游戏表示您同意我们按照更新后的隐私保护指引收集、处理或使用您孩子的个人信息。</span></span></span></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">10.</span></span></span></strong><strong><span><span><span style="color:black">其他</span></span></span></strong></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">《盛趣游戏隐私政策》是盛趣游戏统一适用的一般性隐私条款，其中所规定的内容包括但不限于用户权利及信息安全保障措施等均适用于盛趣游戏用户。本政策是专门针对儿童的隐私保护指引，包含对于儿童个人信息的特殊保护。如《盛趣游戏隐私政策》与本政策存在不一致或矛盾之处，请以本政策为准。</span></span></span></span></span></p>
-
-        <p><span><span><strong><span><span><span style="color:black">11.</span></span></span></strong><strong><span><span><span style="color:black">联系我们</span></span></span></strong></span></span></p>
-
-        <p><span><span><span><span><span style="color:black">若您和孩子对本政策存在任何疑问，或者任何相关的投诉、意见或请求，请发送邮件至anquankefu@shengqugames.com或致电95105222与游戏协调人联系。我们将尽快审核所涉问题，并在验证身份后及时处理，最长在不超过十五天或法律法规规定期限内予以回复。</span></span></span></span></span></p>
-
-        <p style="text-align:right"><span><span><span><span><span style="color:black">盛趣游戏</span></span></span></span></span></p>
-
-        <p style="text-align:justify">&nbsp;</p>
-
-
+        <div id="openHref" style="display: none;position: absolute;width: 100%;height: 100%;z-index: 999999;    background: white;">
+                  <div  style="width:100%;height: 40px;box-shadow: 0 1px 3px rgb(18 18 18 / 10%);
+                  z-index: 999999;background: white;" >
+                  <div id="returnHtml" style="
+                  margin-left: 18px;
+                  width: 36px;
+                  height: 36px;
+                  margin-top: 2px;
+                  " >
+                    <svg  t="1660549344957" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2361" width="36" height="36"><path d="M675.328 117.717333A425.429333 425.429333 0 0 0 512 85.333333C276.352 85.333333 85.333333 276.352 85.333333 512s191.018667 426.666667 426.666667 426.666667 426.666667-191.018667 426.666667-426.666667c0-56.746667-11.093333-112-32.384-163.328a21.333333 21.333333 0 0 0-39.402667 16.341333A382.762667 382.762667 0 0 1 896 512c0 212.074667-171.925333 384-384 384S128 724.074667 128 512 299.925333 128 512 128c51.114667 0 100.8 9.984 146.986667 29.12a21.333333 21.333333 0 0 0 16.341333-39.402667z m-324.693333 373.013334l174.464-174.485334a21.141333 21.141333 0 0 0-0.192-29.973333 21.141333 21.141333 0 0 0-29.973334-0.192l-208.256 208.256a20.821333 20.821333 0 0 0-6.122666 14.976c0.042667 5.418667 2.133333 10.837333 6.314666 14.997333l211.178667 211.2a21.141333 21.141333 0 0 0 29.973333 0.213334 21.141333 21.141333 0 0 0-0.213333-29.973334l-172.629333-172.629333 374.997333 2.602667a20.693333 20.693333 0 0 0 21.034667-21.034667 21.482667 21.482667 0 0 0-21.333334-21.333333l-379.242666-2.624z" fill="#3D3D3D" p-id="2362"></path></svg>
+                  </div>
+                  </div>
+                  <iframe style="    border: none;
+    width: 100%;
+    float: left;
+    height: 100%;"></iframe>
+        </div>
+  <div class="wrap">
+    <!--privacypolicy-->
+    <div class="commontext">
+      <a name="section-privacypolicy"></a>
+      <h1 class="commontext-title" style="text-align:center;"></h1>
+      <div class="commontext-con">
+        <nbsp></nbsp>
+        <p style="text-align: center;text-indent: 0;"><strong>Privacy Policy</strong></p>
+        <nbsp></nbsp>
+        <p style="text-align: center;text-indent: 0;">Last update:&nbsp;[8 November&nbsp;2022]&nbsp;</p>
+        <p>[ARETIS LIMITED] (“ARETIS” or “we”) highly values your privacy. This Privacy Policy (the “Policy”) sets out how we collect, use and protect your personal data when you access, use and play games, features, content and services via websites, mobile applications and other channels or portals developed and managed by ARETIS (the “Services”). Specifically, these Services include but are not limited to applications such as Block Blast, Solitaire Master, etc.Please read and understand this Policy carefully before using our Services so that you can better understand our Services and make appropriate choices. By using the Services, you agree to the collection and use of your personal data as outlined in this Policy.</p>
+        <ol>
+          <li><strong>Who We Are</strong></li>
+        </ol>
+        <p>[ARETIS LIMITED], a company incorporated under the laws of [Hong Kong], is the controller (or a similar role) who is responsible for handling your personal data under this Policy.</p>
+        <ol start="2">
+          <li><strong>The Data We Collect </strong><strong>a</strong><strong>bout You</strong>
+            <ul>
+              <li>We collect both personal and non-personal data when you useour Services 。Personal data means any information relating to an identified or identifiable natural person. An identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier of that natural person.</li>
+              <li>We collect the following types of data for the purposes stated below:</li>
+            </ul>
+          </li>
+        </ol>
+        <table border="1px solid #e0e0e0"   style="
+    word-wrap: break-word;
+    border-collapse: collapse;">
+          <tbody >
+          <tr>
+            <td width="28">
+              <p><strong><strong>N</strong></strong><strong><strong>o.</strong></strong></p>
+            </td>
+            <td width="169">
+              <p><strong><strong>What we collect</strong></strong></p>
+            </td>
+            <td width="193">
+              <p><strong><strong>How we use it</strong></strong></p>
+            </td>
+          </tr>
+          <tr>
+            <td width="28">
+              <p>(1) &nbsp;</p>
+            </td>
+            <td width="169">
+              <p>&nbsp;&nbsp;Google AID</p>
+            </td>
+            <td width="193">
+              <p>&nbsp;&nbsp;Analytics, fraud prevention, security and compliance</p>
+              <p>&nbsp;&nbsp;App functionality</p>
+              <p>&nbsp;&nbsp;Advertising and marketing</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="28">
+              <p>(2) &nbsp;</p>
+            </td>
+            <td width="169">
+              <p>&nbsp;&nbsp;Android ID</p>
+            </td>
+            <td width="193">
+              <p>&nbsp;&nbsp;Analytics, fraud prevention, security and compliance</p>
+              <p>&nbsp;&nbsp;App functionality</p>
+              <p>&nbsp;&nbsp;Advertising and marketing</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="28">
+              <p>(3) &nbsp;</p>
+            </td>
+            <td width="169">
+              <p>&nbsp;&nbsp;IDFA</p>
+            </td>
+            <td width="193">
+              <p>&nbsp;&nbsp;Analytics, fraud prevention, security and compliance</p>
+              <p>&nbsp;&nbsp;App functionality</p>
+              <p>&nbsp;&nbsp;Advertising and marketing</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="28">
+              <p>(4) &nbsp;</p>
+            </td>
+            <td width="169">
+              <p>&nbsp;&nbsp;IDFV</p>
+            </td>
+            <td width="193">
+              <p>&nbsp;&nbsp;Analytics, fraud prevention, security and compliance</p>
+              <p>&nbsp;&nbsp;App functionality</p>
+              <p>&nbsp;&nbsp;Advertising and marketing</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="28">
+              <p>(5) &nbsp;</p>
+            </td>
+            <td width="169">
+              <p>&nbsp;&nbsp;MAC</p>
+            </td>
+            <td width="193">
+              <p>&nbsp;&nbsp;Analytics, fraud prevention, security and compliance</p>
+              <p>&nbsp;&nbsp;App functionality</p>
+              <p>&nbsp;&nbsp;Advertising and marketing</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="28">
+              <p>(6) &nbsp;</p>
+            </td>
+            <td width="169">
+              <p>&nbsp;&nbsp;IP address</p>
+            </td>
+            <td width="193">
+              <p>&nbsp;&nbsp;Analytics, fraud prevention, security and compliance</p>
+              <p>&nbsp;&nbsp;App functionality</p>
+              <p>&nbsp;&nbsp;Advertising and marketing</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="28">
+              <p>(7) &nbsp;</p>
+            </td>
+            <td width="169">
+              <p>&nbsp;&nbsp;CPU</p>
+            </td>
+            <td width="193">
+              <p>&nbsp;&nbsp;Game performance optimization</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="28">
+              <p>(8) &nbsp;</p>
+            </td>
+            <td width="169">
+              <p>&nbsp;&nbsp;Screen size</p>
+            </td>
+            <td width="193">
+              <p>&nbsp;&nbsp;Game performance optimization</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="28">
+              <p>(9) &nbsp;</p>
+            </td>
+            <td width="169">
+              <p>&nbsp;&nbsp;Memory size</p>
+            </td>
+            <td width="193">
+              <p>&nbsp;&nbsp;Game performance optimization</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="28">
+              <p>(10)</p>
+            </td>
+            <td width="169">
+              <p>&nbsp;&nbsp;Hard disk size</p>
+            </td>
+            <td width="193">
+              <p>&nbsp;&nbsp;Game performance optimization</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="28">
+              <p>(11)</p>
+            </td>
+            <td width="169">
+              <p>&nbsp;&nbsp;Device manufacturer</p>
+            </td>
+            <td width="193">
+              <p>&nbsp;&nbsp;Advertising and marketing</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="28">
+              <p>(12)</p>
+            </td>
+            <td width="169">
+              <p>&nbsp;&nbsp;Network Status</p>
+            </td>
+            <td width="193">
+              <p>&nbsp;&nbsp;Game performance optimization</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="28">
+              <p>(13)</p>
+            </td>
+            <td width="169">
+              <p>&nbsp;&nbsp;Device Country</p>
+            </td>
+            <td width="193">
+              <p>&nbsp;&nbsp;Advertising and marketing</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="28">
+              <p>(14)</p>
+            </td>
+            <td width="169">
+              <p>&nbsp;&nbsp;Device Language</p>
+            </td>
+            <td width="193">
+              <p>&nbsp;&nbsp;Advertising and marketing</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="28">
+              <p>(15)</p>
+            </td>
+            <td width="169">
+              <p>&nbsp;&nbsp;Operating System</p>
+            </td>
+            <td width="193">
+              <p>&nbsp;&nbsp;Game performance optimization</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="28">
+              <p>(16)</p>
+            </td>
+            <td width="169">
+              <p>&nbsp;&nbsp;Device Time Zone</p>
+            </td>
+            <td width="193">
+              <p>&nbsp;&nbsp;Advertising and marketing</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="28">
+              <p>(17)</p>
+            </td>
+            <td width="169">
+              <p>&nbsp;&nbsp;Device Model</p>
+            </td>
+            <td width="193">
+              <p>&nbsp;&nbsp;Game performance optimization</p>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+        <ol start="3">
+          <li><strong>Special Categories of Personal Data</strong>
+            <ul>
+              <li>Certain categories of personal data, such as details about your race or ethnicity, religious or philosophical beliefs and so on, are considered more sensitive than other categories of personal data in certain jurisdictions and require a higher level of protection.</li>
+              <li>Toclarify, our Services do not collect any types of those special categories of personal data.</li>
+            </ul>
+          </li>
+          <li><strong>How Your Personal Data </strong><strong>is</strong><strong>Collected</strong></li>
+        </ol>
+        <p>We may&nbsp;collect your&nbsp;personal&nbsp;data through&nbsp;our Services, or by post, phone, email or other means you choose to interact with us.</p>
+        <ol start="5">
+          <li><strong>Legal Basis for Collection and Use of Personal Data</strong></li>
+        </ol>
+        <p>We only process your personal data where this is a legal basis permitted by the applicable law. The legal basis will depend on the context and purpose for which we collect and use your data, which may include:</p>
+        <ul>
+          <li>Consent: certain data will be collected when you have given us informed consent. You may withdraw your consent at any time but this will not affect the validity of the processing activities prior to the withdrawal.</li>
+          <li>Contractual necessity: it is necessary for us to collect and process certain data to enable us to enter into a contract with you and perform our contractual obligations.</li>
+          <li>Fulfilment of legal obligation: we may be required by the applicable law to collect and use your personal data to comply with our legal obligations.</li>
+          <li>Legitimate interests: in certain jurisdictions we may rely on legitimate interests to collect and use your personal data to operate and improve our business.</li>
+          <li>Other: we may also collect and use your personal data based on other legal bases under the applicable law.</li>
+        </ul>
+        <ol start="6">
+          <li><strong>Cookies, SDK and Similar Technologies</strong>
+            <ul>
+              <li>Our Services use cookies, SDK and similar technologies to deliver essential and additional functions. Please see [<a id="SDK"  style="cursor: pointer" hrefIfream="sdksus.html"><u>SDK List</u></a>]for&nbsp;more information on the types of SDKs we incorporate into our mobile applications.</li>
+              <li>The information collected by the SDKs are for the purposes of:
+                <ul>
+                  <li>providing and improving our Services;</li>
+                  <li>analyzing how our Services are used by users;</li>
+                  <li>displaying and running in-app advertisements;</li>
+                  <li>studying and analyzing the functionality and performance of the Services and activities related to the Services;</li>
+                  <li>protecting the Services and usersfrom fraud, misuse and unlawful use of the Services&rsquo; and related data and assets.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ol>
+        <p>We do not have access to the information collected by the SDKs.</p>
+        <ol start="7">
+          <li><strong>Third-party Links</strong></li>
+        </ol>
+        <p>Our Services may include links to third-party websites, plug-ins and applications. Clicking on those links may allow you to visit websites and applications of third parties. Please read the privacy policy of the third-party websites, plug-ins and applications you visit to know how they collect and use your personal data.</p>
+        <ol start="8">
+          <li><strong>Disclosure</strong>
+            <ul>
+              <li>We will not disclose your personal data to third parties unless we have obtained your consent or there are other legal bases for such disclosure.</li>
+              <li>We may engage a data processor (and/or sub-processor) to process your personal data for the purposes in this Policy, in which case we will request the data processor (and/or sub-processor) to keep your personal data in strict confidence and only process data to the extent it is necessary to perform its contractual or statutory obligations.</li>
+              <li>We may disclose your personal data to third parties to whom we may choose to sell, transfer or merge parts of our business or our assets, in which case the new owners will assume all our rights and obligations in this Policy.</li>
+              <li>We may also disclose your personal data for the purposes of national security, law enforcement, or public interests.</li>
+            </ul>
+          </li>
+          <li><strong>International Transfer of Data</strong>
+            <ul>
+              <li>We may choose to store your personal data on a local server or a server located in a foreign country depending upon the IT configurations of our websites and mobile applications, which may be adjusted from time to time.</li>
+              <li>Where the transfer of your personal data to a server located in a foreign country satisfies the definition of international transfer or cross-border transfer of personal data under the applicable law, we will determine the legal basis for the transfer and take appropriate security measures to ensure a level of protection as required under the applicable law.</li>
+            </ul>
+          </li>
+          <li><strong>Data Retention</strong></li>
+        </ol>
+        <p>We will only retain your personal data for as long as reasonably necessary to fulfil the purposes set out in this Policy. We will either delete or anonymize your personal data when it is no longer required to satisfy the purposes set out in this Policy.</p>
+        <ol start="11">
+          <li><strong>Your Legal Rights</strong>
+            <ul>
+              <li>You may have certain legal rights in relation to processing of your personal data, which may include:</li>
+            </ul>
+          </li>
+        </ol>
+        <ul>
+          <li>Access right: you may request access to your personal data in our possession.</li>
+          <li>Rectification right: you may request us to correct your personal data if it is inaccurate.</li>
+          <li>Erasure right: you may request us to delete your personal data.</li>
+          <li>Restriction right: you may request us to restrict how we process your personal data.</li>
+          <li>Portability right: you may request us to help you transfer your personal data to other entities.</li>
+          <li>Withdrawal of consent: you may withdraw your consent at any time.</li>
+          <li>Right to complain and report: you have the right to complain to the relevant supervisory authority.
+            <ul>
+              <li>The above rights may only apply in limited circumstances under the applicable law and if we decide not to respond to your claim for the above rights, we will explain reasons.</li>
+            </ul>
+          </li>
+        </ul>
+        <ol start="12">
+          <li><strong>Children&rsquo;s Data</strong>
+            <ul>
+              <li>Our Services are designedand&nbsp;provided to users of various age groups. We will not collect personal data from any users who are under the age of 13. If parents or legal guardians&nbsp;suspect that their children, under the age of 13, have provided us with personal data inadvertently, they may request such personal data be removed by contacting us at [service@aretis.cc].</li>
+              <li>Users who are between 13 and 18 years old (or the relevant age defined as a minor in the respective jurisdiction) should seek the consent of their parents or legal guardians before using our Services.</li>
+            </ul>
+          </li>
+          <li><strong>Data Security</strong></li>
+        </ol>
+        <p>We are committed to keeping your personal data safe. We take reasonable and appropriate administrative, technical, organizational, and physical security and risk management measures in accordance with applicable laws to ensure that your personal data is adequately protected against accidental or unlawful destruction, damage, loss or alteration, unauthorized or unlawful access, disclosure or misuse, and all other unlawful forms of processing of your personal data in our possession.</p>
+        <ol start="14">
+          <li><strong>Changes to this Policy</strong>
+            <ul>
+              <li>This Policy may be changed from time to time.</li>
+              <li>If we change anything important about this Policy (e.g., the type of personal data we collect), we will provide a prominent link together with the updated policy for your reference onour Services.</li>
+            </ul>
+          </li>
+          <li><strong>Contact Us</strong></li>
+        </ol>
+        <p>If you have any questions about this Policy, including any requests to exercise your legal rights, please contact our data protection department at [service@aretis.cc].</p>
+        <p>&nbsp;&nbsp;</p>
+        <p>&nbsp;&nbsp;</p>
+        <p>&nbsp;&nbsp;</p>
+        <div style="position: relative;">
+          <div style="position:absolute;left:50%;top: 50%;transform: translate(-50%,-50%);width:100px;height:36px;background: #5b8efb;border-radius: 10px;">
+            <a  id="privacyusHref" hrefifream="serviceus.html" style="    text-align: center;
+            display: block;
+            height: 100%;
+            line-height: 36px;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;">Terms of Use</a>
+          </div>
+
+        </div>
+        <p>&nbsp;&nbsp;</p>
+      </div>
     </div>
-</body>
-</html>
+
+  </div>
+
+
+  <!-- 判断设备 -->
+  <script type="text/javascript">
+    window.addEventListener('message',function (res) {
+
+      if(res.data == 'ret'){
+        document.body.style.overflow = 'auto'
+        document.getElementById('openHref').style.display = 'none'
+        document.getElementById('openHref').children[1].src = ''
+      }
+    })
+    document.getElementById('SDK').addEventListener('touchstart',function(){
+
+    },false)
+    document.getElementById('SDK').addEventListener('touchend',function(){
+      document.body.scrollTop = document.documentElement.scrollTop = 0;
+      document.body.style.overflow = 'hidden'
+      document.getElementById('openHref').style.display = 'block'
+      document.getElementById('openHref').children[1].src =this.getAttribute('hrefifream')
+    },false)
+    document.getElementById('SDK').addEventListener('click',function(){
+      document.body.scrollTop = document.documentElement.scrollTop = 0;
+      document.body.style.overflow = 'hidden'
+      document.getElementById('openHref').style.display = 'block'
+      document.getElementById('openHref').children[1].src =this.getAttribute('hrefifream')
+    },false)
+      document.getElementById('privacyusHref').addEventListener('touchstart',function(){
+
+      },false)
+      document.getElementById('privacyusHref').addEventListener('touchend',function(){
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+        document.body.style.overflow = 'hidden'
+        document.getElementById('openHref').style.display = 'block'
+        document.getElementById('openHref').children[1].src =this.getAttribute('hrefifream')
+      },false)
+    document.getElementById('privacyusHref').addEventListener('click',function(){
+      document.body.scrollTop = document.documentElement.scrollTop = 0;
+      document.body.style.overflow = 'hidden'
+      document.getElementById('openHref').style.display = 'block'
+      document.getElementById('openHref').children[1].src =this.getAttribute('hrefifream')
+    },false)
+
+          document.getElementById('returnHtml').addEventListener('touchstart',function(){
+
+          },false)
+    document.getElementById('returnHtml').addEventListener('click',function(){
+      document.body.style.overflow = 'auto'
+      document.getElementById('openHref').style.display = 'none'
+      document.getElementById('openHref').children[1].src = ''
+    },false)
+          document.getElementById('returnHtml').addEventListener('touchend',function(){
+                        document.body.style.overflow = 'auto'
+                        document.getElementById('openHref').style.display = 'none'
+                        document.getElementById('openHref').children[1].src = ''
+                },false)
+
+    function browserRedirect() {
+      var sUserAgent = navigator.userAgent.toLowerCase();
+      var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+      var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+      var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+      var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+      var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+      var bIsAndroid = sUserAgent.match(/android/i) == "android";
+      var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+      var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+      if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+        //移动设备
+      } else {
+        //pc
+        document.getElementsByTagName('body')[0].className = 'pc'; //设置为新的
+      }
+    }
+
+    browserRedirect();
+  </script>
+
+
+
+
+
+</body></html>
